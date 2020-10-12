@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/shoppingcart.css" />
+		<link rel="stylesheet" href="../css/tou.css" />
+		<script src="../js/getuser.js"></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jiajian.js"></script>
+		<script src="../js/getXMLHTTP.js"></script>
+	</head>
+
+	<body>
+		<center class="header">
+			<div class="Top">
+				<div class="headertop">
+					<div class="ri">
+						<div class="one">
+							<a href="javascript:;">网站公告</a>
+							<em class="fr em1"></em>
+							<em class="fr em2"></em>
+							<b class="b"></b>
+						</div>
+					</div>
+					<div class="le">
+						<div id="come" class="fl">
+							您好
+							<span id="come"></span>
+							<!--<font class="out">退出</font>
+						<span id="denglu">
+							<a href="">登录</a>
+							&nbsp;|&nbsp;
+							<a href="">注册</a>
+						</span>-->
+						</div>
+						<div class="fl dan">
+							<a href="">我的订单</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</center>
+		<script type="text/javascript">
+			$("center").load("tou.html", function() {
+				getuser();
+
+			})
+		</script>
+		<div id="page">
+			<div id="header_box">
+				<a href="#"><img src="../images/vancl-logo.png" /></a>
+			</div>
+			<div id="cont">
+				<span>1.我的购物车</span>
+				<span>2.填写核对信息单</span>
+				<span>3.成功提交订单</span>
+			</div>
+
+			<div class="tent">
+				<h2>我的购物车</h2>
+			</div>
+			<div class="hint">
+				<span>温馨提示：</span> 1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。
+			</div>
+
+			<div id="inventory">
+				<div class="middlegame">
+					<div class="caption">
+						<li>
+							<input type="checkbox" class="allCheck" checked/>
+							<label>全选</label>
+						</li>
+						<li>商品名称</li>
+						<li>尺寸</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+						<li>操作</li>
+					</div>
+					<div class="shop"></div>
+				</div>
+				<div class="clearing">
+					<ul>
+						<li>
+							<input type="checkbox" class="allCheck" checked/>
+						</li>
+						<li>
+							全选
+						</li>
+						<li id="delete">
+							全部删除
+						</li>
+						<li>
+							<span>数量总计：</span>
+							<em id="num"></em>件
+						</li>
+					</ul>
+
+					<li>
+						产品金额总计(不含运费)：
+						<span id="money"></span> 元
+					</li>
+					<li>
+						<a href="sy.html"><input type="button" value="<<继续购物" /></a>
+
+					</li>
+					<li>
+						<a id="a" href="indent.html">
+							&nbsp;去结算>>
+						</a>
+
+					</li>
+				</div>
+			</div>
+			<div id="base">
+				<span>
+					Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号
+				</span>
+				<p>
+					<img src="../images/cert-redlogo.gif" />
+					<img src="../images/cert-costumeorg.gif" />
+					<img src="../images/cert-wsjybzzx.gif" />
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function getshopping() {
+				var fankeuser = window.localStorage.getItem("fankeuser");
+				console.log(fankeuser);
+				if(fankeuser) {
+					var obj = JSON.parse(fankeuser);
+					console.log(obj);
+					$.ajax({
+						type: "post",
+						async: true,
+						data: "user=" + obj.user,
+						url: "../php/getfankeuser.php",
+						success: function(data) {
+							//console.log(data);
+							var arr = JSON.parse(data);
+							console.log(arr);
+							if(arr.length == 0) {
+								alert("没商品");
+								console.log("再逛逛");
+							} else {
+								shopcarHTML(arr);
+							}
+						}
+					})
+				} else {
+					alert("未登录");
+					shopcarHTML(arr);
+				}
+			}
+			getshopping();
+
+			//向页面添加服务器数据
+			function shopcarHTML(arr) {
+				for(var j = 0; j < arr.length; j++) {
+					var oDl = document.createElement("ul");
+					var add = document.createElement("li");
+					oDl.className = "xq";
+					$(add).html("<input type='checkbox' id='IPT' checked>");
+					$(oDl).append(add);
+					add.className = "fff";
+
+					var li = document.createElement("li");
+					var img = document.createElement("img");
+					img.src = "../images/" + arr[j].sSmallImg;
+					li.append(img);
+					$(oDl).append(li);
+
+					var add = document.createElement("li");
+					$(add).append(arr[j].shopTitle);
+					$(oDl).append(add);
+					add.className = "title";
+
+					var add = document.createElement("li");
+					$(add).append(arr[j].size);
+					$(oDl).append(add);
+
+					var add = document.createElement("li");
+					var p = document.createElement("p");
+					$(p).html("￥");
+					$(p).append(arr[j].sPrice);
+					$(add).append(p);
+					$(oDl).append(add);
+					add.className = "moy";
+
+					var add = document.createElement("li");
+					$(add).html("<span><a class='jian'>-</a><input type='text' class='zhong' name='name' value='" + arr[j].shopNum + "'/><a class='jia'>+</a></span>");
+					$(oDl).append(add);
+					add.className = "num";
+
+					var add = document.createElement("li");
+					$(add).append("￥" + (arr[j].sPrice) * (arr[j].shopNum));
+					$(oDl).append(add);
+					add.className = "li";
+
+					var add = document.createElement("li");
+					$(add).html("<input type='button' class='clear' value='删除' name=" + arr[j].addcarId + ">");
+					$(oDl).append(add);
+					$("div.shop").append(oDl);
+					aaaa();
+
+					var money = 0;
+					$(".shop ul.xq").each(function(_a, obj) {
+						money += $(obj).find("li.li").html().split("￥")[1] * 1;
+					})
+					$("#money").html(money);
+					//					
+					//					
+					//					
+					var jian = 0;
+					$(".shop ul.xq").each(function(_a, arr) {
+						jian += $(arr).find("input#IPT").length;
+						$(".allCheck").click(function() {
+							if($(this).prop("checked")) {
+								$(".shop ul.xq li input[type=checkbox]").prop("checked", true);
+								$(".allCheck").prop("checked", true);
+								$("#num").html(jian);
+							} else {
+								$(".shop ul.xq li input[type=checkbox]").prop("checked", false);
+								$(".allCheck").prop("checked", false);
+								$("#num").html(0);
+							}
+						})
+					})
+					$("#num").html(jian);
+
+					function fcheckSettlementMoney() {
+						var money1 = document.querySelector("#money");
+						var Num = document.querySelector("#num");
+						var ipt = document.querySelectorAll("#IPT");
+						var jjj = document.querySelectorAll("ul.xq");
+						var oZhong = document.querySelectorAll(".zhong");
+						for(var i = 0; i < ipt.length; i++) {
+							ipt[i].index = i;
+							ipt[i].onclick = function() {
+								if(this.checked) {
+									money1.innerHTML = parseInt(money1.innerHTML) + parseInt(this.parentNode.parentNode.childNodes[6].innerHTML.split("￥")[1]);
+									$("#num").html($("#num").html() * 1 + $(".zhong").val() * 1);
+									
+									aaaa();
+								}else{
+									money1.innerHTML = parseInt(money1.innerHTML) - parseInt(this.parentNode.parentNode.childNodes[6].innerHTML.split("￥")[1]);
+									$("#num").html($("#num").html() - $(".zhong").eq(this.index).val());
+									this.parentNode.parentNode.childNodes[5].childNodes[0].childNodes[2].onclick = null;
+							
+								}
+							}
+						}
+						$(".shop ul.xq").each(function(k, obj) {
+							$(".shop ul.xq li input[type=checkbox]").click(function(){
+								if($(this).prop("checked")){
+									$("#a").click().css("background", "#a10000").attr("href", "indent.html");
+								}else{
+									$("#a").click().css("background", "#ccc").attr("href", "javascript:;");
+								}
+							})
+						})
+						$(".shop ul.xq li input[type=checkbox]").click(function() {
+							var num = 0;
+							$(".shop ul.xq li input[type=checkbox]").each(function(k, obj) {
+								if($(obj).prop("checked")) {
+									num++;
+								}
+							})
+							if(num == $(".shop ul.xq li input[type=checkbox]").length) {
+								$(".allCheck").prop("checked", true);
+							} else {
+								$(".allCheck").prop("checked", false);
+							}
+						})
+						$(".allCheck").click(function() {
+							if($(this).prop("checked")) {
+								$(".shop ul.xq li input[type=checkbox]").prop("checked", true);
+								$(".allCheck").prop("checked", true);
+								$("#money").html(money);
+								$("#a").click().css("background", "#a10000").attr("href", "indent.html");
+								
+								aaaa();
+							} else {
+								$(".shop ul.xq li input[type=checkbox]").prop("checked", false);
+								$(".allCheck").prop("checked", false);
+								$("#money").html(0);
+								$("#a").click().css("background", "#ccc").attr("href", "javascript:;");
+								for(var z=0;z<3;z++){
+									this.parentNode.parentNode.parentNode.parentNode.childNodes[1].childNodes[3].childNodes[z].childNodes[5].childNodes[0].childNodes[2].onclick = null;
+								}
+							}
+						})
+					}
+					fcheckSettlementMoney();
+				}
+			}
+
+			
+		</script>
+	</body>
+
+</html>

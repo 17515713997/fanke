@@ -1,0 +1,122 @@
+body{
+	background: #fbf9f7;
+}
+#header{
+	width: 100%;
+	height: 70px;
+	background: url(../images/phone1.png)repeat-x 0 0;
+	overflow: hidden;
+}
+#header .head{
+	width: 980px;
+	height: 68px;
+	margin: 0 auto;
+}
+#header .head a{
+	display: block;
+	width: 230px;
+	height: 54px;
+	background: url(../images/phone2.jpg)no-repeat;
+	margin: 5px 0 0 20px;
+}
+#banner{
+	width: 1300px;
+	height: 424px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/phone3.jpg);
+}
+#banner .ewm{
+	position: absolute;
+	width: 133px;
+	height: 133px;
+	display: block;
+	right: 0;
+	bottom: 48px;
+}
+#banner .ewm img{
+	width: 133px;
+	height: 133px;
+}
+#contentBox{
+	width: 970px;
+	height: 240px;
+	margin:100px auto 0;
+}
+#contentBox ul{
+	width: 970px;
+	height: 240px;
+}
+#contentBox ul li{
+	float: left;
+	width: 230px;
+	height: 100px;
+	margin-bottom: 26px;
+}
+#contentBox ul li h4{
+	width: 100px;
+	height: 20px;
+	background: url(../images/phone5.gif) no-repeat -600px -260px;
+	overflow: hidden;
+	color: #333;
+}
+#contentBox ul li span{
+	color: #848484;
+	margin: 11px 0 0 34px;
+	width: 188px;
+	display: block;
+	line-height:20px;
+}
+#contentBox ul li.two h4{
+	width: 110px;
+    height: 30px;
+    background: url(../images/phone5.gif) no-repeat -480px -260px;
+}
+#contentBox ul li.three{
+	width: 230px;
+	height: 100px;
+	margin-bottom: 26px;
+}
+#contentBox ul .three h4{
+	width: 110px;
+    height: 30px;
+    background: url(../images/phone5.gif) no-repeat -220px -260px;
+}
+#contentBox ul .three span{
+	margin: 2px 0 0 34px;
+	color: #848484;
+	width: 188px;
+	display: block;
+	line-height: 20px;
+}
+#contentBox ul li.four h4{
+	width: 110px;
+    height: 30px;
+    background: url(../images/phone5.gif) no-repeat -110px -260px;
+}
+#contentBox ul li.five h4{
+	width: 110px;
+    height: 30px;
+    background: url(../images/phone5.gif) no-repeat 0 -260px;
+}
+#contentBox ul li.six h4{
+	width: 110px;
+    height: 30px;
+    background: url(../images/phone5.gif) no-repeat -340px -260px;
+}
+#footer{
+	width: 100%;
+	height: 32px;
+	text-align: center;
+	padding: 40px 0 40px 0;
+}
+#footer span,
+#footer p{
+	color: #848484;
+}
+#footer a{
+	color: #333;
+}
+#footer a:hover{
+	color: #A10000;
+}

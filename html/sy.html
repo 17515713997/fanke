@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>		
+		<script src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/header.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<script src="../js/getNav.js"></script>
+		<script src="../js/getXMLHTTP.js"></script>
+		<script src="../js/gettwo.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/sy.css" />
+		<script src="../js/getuser.js"></script>
+		<script src="../js/com.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<script type="text/javascript">
+			window.load=function(){
+				getuser();
+			}
+		</script>
+		<script>
+				$("header").load("header.html", function() {
+					getNav();
+					gettwo();
+ 					getuser();
+ 					outuser();
+ 				})
+		</script>
+		
+		<div id="picBox">
+			<ul class="picList">
+				<li class="list">
+					<a href=""><img src="../images/lbt1.jpg" alt="" /></a>
+				</li>
+				<li class="list">
+					<a href=""><img src="../images/lbt2.jpg" alt="" /></a>
+				</li>
+				<li class="list">
+					<a href=""><img src="../images/lbt3.jpg" alt="" /></a>
+				</li>
+				<li class="list">
+					<a href=""><img src="../images/lbt4.jpg" alt="" /></a>
+				</li>
+				<li class="list">
+					<a href=""><img src="../images/lbt5.jpg" alt="" /></a>
+				</li>
+				<li class="list">
+					<a href=""><img src="../images/lbt6.jpg" alt="" /></a>
+				</li>
+			</ul>
+			<div class="round">
+
+			</div>
+			<button class="left_btn btn"> &lt;</button>
+			<button class="right_btn btn"> &gt;</button>
+		</div>
+		<div class="tu">
+			<a href="">
+				<img src="../images/tl.jpg"/>
+			</a>
+		</div>
+		<div id="new">
+			<a href="">
+				<h2 class="h2">
+					<span class="sp">
+						<em class="clear">秒杀进行中，距结束还有</em>
+						<em class="e1"></em>
+						<em class="e2"></em>
+						<em class="e3"></em>
+					</span>
+				</h2>
+			</a>
+		</div>
+		<div id="kill">
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="nap">
+			<a href=""><img src="../images/xhsm_g.jpg" alt="" /></a>
+		</div>
+		<div id="clo"></div>
+		<div class="qu">
+			<a href=""><img src="../images/qu.jpg" alt="" /></a>
+		</div>
+		<div id="cs"></div>
+		
+		<div id="picList">
+			<h2>优选推荐</h2>
+			<ul></ul>
+		</div>
+		
+		<div id="pic">
+			<h2>下载推荐</h2>
+			<ul></ul>
+		</div>
+		<div id="Foot">
+			<div class="fo1">
+				<ul>
+					<li>
+						<a href="">
+							<p class="g"><img src="../images/rg.png" alt="" /></p>
+							<p class="g1">7X9小时在线客服</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p class="qi"><img src="../images/qi.png" alt="" /></p>
+							<p class="qi">7天内退货</p>
+							<p class="qi">购物满199元免运费</p>
+						</a>
+					</li>
+					<li class="erweima">
+						<p class="ma1">
+							<img src="../images/ma.jpg" alt="" />
+						</p>
+						<p class="ma2">扫描下载<em>凡客</em>客户端</p>
+					</li>
+				</ul>
+			</div>
+			<div class="fo2">
+				<ul>
+					<li><a href="">关于凡客</a></li>
+					<li><a href="">新手指南</a></li>
+					<li><a href="">配送范围及时间</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">售后服务</a></li>
+					<li style="border-right:none;"><a href="">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bottom">
+			<div class="tom">
+				<div class="foo">
+					<p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+					<p>凡客诚品（北京）科技有限公司</p>
+				</div>
+			</div>
+			<div class="ter">
+				<a href="" class="tu1"></a>
+				<a href="" class="tu2"></a>
+				<a href="" class="tu3"></a>
+				<a href="" class="tu4"></a>
+				<a href="" class="tu5"></a>
+				<a href="" class="tu6">
+					<img src="../images/tu6.png" alt="" />
+				</a>
+			</div>
+		</div>
+		<div id="cbl">
+			<ul>
+				<li class="cbl1"><a href="manners.html"></a></li>
+				<li class="cbl2"><a href="Mobile.html"></a></li>
+				<li class="cbl3"><a href="Fourth.html"></a></li>
+				<li class="cbl4"><a href="#Hea"></a></li>
+			</ul>
+		</div>
+		<div id="mack">
+			<img src="../images/1200x600.jpg" alt="" />
+			<span></span>
+		</div>
+		<script>
+			var obj = document.querySelector("#mack");
+			var span = obj.querySelector("span");
+			span.onclick = function() {
+				obj.style.display = "none";
+			}
+		</script>
+		<script>
+			$(function() {
+				setTimeout(function() {
+					$("#mack").css("display", "none");
+				}, 5000);
+			})
+		</script>
+		<script>
+			function getshopping() {
+				var fankeuser = window.localStorage.getItem("fankeuser");
+				console.log(fankeuser);
+				if(fankeuser) {
+					var obj = JSON.parse(fankeuser);
+					console.log(obj);
+					$.ajax({
+						type: "post",
+						async: true,
+						data: "user=" + obj.user,
+						url: "../php/getfankeuser.php",
+						success: function(data) {
+							//console.log(data);
+							var arr = JSON.parse(data);
+							console.log(arr);
+							if(arr.length == 0) {
+								alert("没商品");
+								console.log("再逛逛");
+							} else {
+								shopcarHTML(arr);
+							}
+						}
+					})
+				}else{
+					alert("未登录");
+					shopcarHTML(arr);
+				}
+			}
+			getshopping();
+			function shopcarHTML(arr) {
+				for(var j = 0; j < arr.length; j++) {
+					var oDl = document.createElement("ul");
+					var add = document.createElement("li");
+					var div = document.createElement("div");
+					div.innerHTML = "总价:"
+					div.className = "dddiiivvv";
+					oDl.className = "xq";	
+				
+					var li = document.createElement("li");
+					var img = document.createElement("img");
+					img.src = "../images/" + arr[j].sSmallImg;
+					li.append(img);
+					$(oDl).append(li);
+					li.className = "img"
+						
+					var li = document.createElement("li");
+					$(li).append(arr[j].shopTitle);
+					$(oDl).append(li);
+					li.className = "title";
+					
+					var li = document.createElement("li");
+					var b = document.createElement("b");
+					$(b).html("￥");
+					$(b).append(arr[j].sPrice);
+					$(li).append(b);
+					$(oDl).append(li);
+					li.className = "moy";
+					
+					var li = document.createElement("li");
+					var span = document.createElement("span");
+					li.innerHTML = "x";
+					$(span).append(arr[j].shopNum);
+					$(li).append(span);
+					$(oDl).append(li);
+					li.className = "ls";
+					
+					$("div.che").append(oDl);
+					
+					console.log(arr.length);
+					$("#ling").html(arr.length);
+				}
+				var em = document.createElement("em");
+				$(div).append(em);
+				$("div.che").append(div);
+				
+				var money = 0;
+				$("ul.xq").each(function(_a, obj) {
+					money += $(obj).find(".moy b").html().split("￥")[1] * 1;
+				})
+				$(".dddiiivvv em").html("￥"+money); 
+			}
+		</script>
+	</body>
+</html>
+<script src="../js/djs.js"></script>
+<script src="../js/lbt.js"></script>

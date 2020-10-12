@@ -1,0 +1,79 @@
+.header{
+	width: 100%;
+    height: 32px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    color: #808080;
+}
+.header .Top{
+	width:100%;
+	height:31px;
+	background:#f7f7f7;
+}
+.header .Top .headertop{
+	width:1200px;
+	margin:0 auto;
+	height:31px;
+	line-height:32px;
+	background:#f7f7f7;
+}
+.header .Top .headertop .ri{
+	float:right;
+	width:136px;
+	position:relative;
+	z-index:2;
+}
+.header .Top .headertop .ri .one a{
+	width:55px;
+	padding-left: 26px;
+	background:url(../images/notice.png) no-repeat; 
+	text-align:left;
+	color:#808080;
+}
+.header .Top .headertop .ri .one a:hover{
+	color:#a10000;
+}
+.header .Top .headertop .ri .one .em1{
+	background:url(../images/w2.jpg)no-repeat;
+    display: inline;
+    cursor: pointer;
+    width:20px;
+    height: 21px;
+    line-height:21px;
+    margin-top:7px;
+}
+.header .Top .headertop .ri .one .em2{
+	background:url(../images/w1.jpg)no-repeat;
+    width:20px;
+    display: inline;
+    cursor: pointer;
+    height: 21px;
+    line-height:21px;
+     margin-top:7px;
+}
+.header .Top .headertop .ri .one .b{
+	position:absolute;
+	left:-40px;
+	top:31px;
+	width:148px;
+	height:169px;
+	border:1px solid #e5e5e5;
+	background:url(../images/weixin.png);
+	display: none;
+}
+.header .Top .headertop .ri .one:hover .b{
+	display: block;
+}
+.header .Top .headertop .le{
+	min-width:240px;
+	float:right;
+}
+.header .Top .headertop .le .dan{
+	margin: 0px 0 0 13px;
+    float: left;
+    display: inline;
+    margin-right: 10px;
+}
+.header .Top .headertop .le .dan a:hover{
+	color:#a10000;
+}

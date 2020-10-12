@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/xqy.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<script src="../js/getXMLHTTP.js"></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/xqy.js"></script>
+		<script src="../js/getNav.js"></script>
+		<script src="../js/gettwo.js"></script>
+		<script src="../js/recommendation.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<script type="text/javascript">
+			$("header").load("header.html",function(){
+				getNav();
+				gettwo();
+			})
+		</script>
+		<div id="banner_box">
+			<ul class="getNav">
+				<li>
+					<a href="">首页</a>
+				</li>
+				<span>></span>
+				<li>
+					<a href="">男装</a>
+				</li>
+				<span>></span>
+				<li>
+					<a href="">T桖</a>
+				</li>
+				<span>></span>
+				<li>
+					<a href="">短袖T桖</a>
+				</li>
+				<span>></span>
+				<li class="Pro">
+					<a href="" style="color: #333;"> T恤 全棉舒适 素色基础 Pro</a>
+				</li>
+			</ul>
+			<ul class="describeNav">
+				<li>
+					<h2 class="yanse"></h2>
+				</li>
+				<li class="product">
+					<a href="">产品描述</a>
+					|
+				</li>
+				<li>
+					<a href="">评论</a>
+					|
+				</li>
+				<li>
+					<a href="">提问</a>
+				</li>
+			</ul>
+			<div class="left">
+				<ul class="thirdPhoto hh">
+					<li class="one">
+						<span></span>
+					</li>
+					<li class="two">
+						<span></span>
+					</li>
+					<li class="three">
+						<span></span>
+					</li>
+				</ul>
+				<ul class="thirdPhoto ago" style="position: absolute;overflow: hidden;">
+					<li class="one">
+						<span></span>
+					</li>
+					<li class="two">
+						<span></span>
+					</li>
+					<li class="three">
+						<span></span>
+					</li>
+					<li class="four">
+						<span></span>
+					</li>
+					<li class="five">
+						<span></span>
+					</li>
+					<li class="six">
+						<span></span>
+					</li>
+				</ul>
+				<div class="bigPicture">
+					<ul></ul>
+					<ul style="position: absolute;"></ul>
+					<!--<img src="../images/xqy2.jpg" alt="" />-->
+				</div>
+			</div>
+			<div class="right">
+				<ul class="Preferential">
+					<li class="one">
+						<i>特惠价：￥</i>
+						<span class="money"></span>
+						<a href="">充100返100，点击充值</a>
+					</li>
+					<li class="two">
+						<p style="float: left;">颜色：</p>
+						<div class="white">
+							<span></span>
+							<p class="color"></p>
+						</div>
+						<div class="black" style="margin-left: 8px;">
+							<span></span>
+							<p class="color1"></p>
+						</div>
+					</li>
+					<li class="three">
+						<p>尺码：</p>
+						<ol class="size">
+							<li>
+								<a href="javascript:;"></a>
+								<span class="duihao"></span>
+							</li>
+							<li>
+								<a href="javascript:;"></a>
+								<span></span>
+							</li>
+							<li>
+								<a href="javascript:;"></a>
+								<span></span>
+							</li>
+							<li style="width: 32px;">
+								<a href="javascript:;"></a>
+								<span></span>
+							</li>
+							<li style="width: 38px;">
+								<a href="javascript:;"></a>
+								<span></span>
+							</li>
+						</ol>
+						<div class="tishi">
+							<span></span>
+							<p>请选择您要购买的商品尺码</p>
+						</div>
+					</li>
+					<li class="four">
+						<p>数量：</p>
+						<select name="" class="Select">
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+						</select>
+					</li>
+					<li class="five">
+						<p>已选：</p>
+						<a href=""></a>
+						<span>现在有货</span>
+					</li>
+					<li class="six">
+						<input type="button" value="立即购买" class="purchase"/>
+						<input type="button" class="shop"/>
+						<div class="shopBox">
+							<h2 class="header">
+								<span class="yeah">商品成功放入购物车</span>
+								<span class="cha"></span>
+							</h2>
+							<div class="content">
+								<span class="shopPhoto"></span>
+								<ul>
+									<li>
+										<p style="line-height: 22px;">
+											<span>共有</span>
+											<span class="number" style="color: #b81c22;"></span>
+											<span>商品</span>
+										</p>
+									</li>
+									<li>
+										<span>总计</span>
+										<span style="color: #B81C22;">￥<span class="price"></span></span>
+									</li>
+								</ul>
+								<div class="ago">
+									<input type="button" value="<<继续购物" class="Continue"/>
+									<input type="button" value="去购物车>>" class="go"/>
+								</div>
+							</div>
+							<h3 class="Recommend">
+								推荐商品
+							</h3>
+							<ul class="five">
+								<li>
+									<!--<img src="../images/xqy43.jpg" alt="" />-->
+									<!--<a href=""></a>-->
+									<!--<p></p>-->
+								</li>
+								<li>
+									<!--<img src="../images/xqy44.jpg" alt="" />-->
+									<!--<a href=""></a>-->
+									<!--<p></p>-->
+								</li>
+								<li>
+									<!--<img src="../images/xqy45.jpg" alt="" />-->
+									<!--<a href=""></a>-->
+									<!--<p></p>-->
+								</li>
+								<li>
+									<!--<img src="../images/xqy46.jpg" alt="" />-->
+									<!--<a href=""></a>-->
+									<!--<p></p>-->
+								</li>
+								<li>
+									<!--<img src="../images/xqy47.jpg" alt="" />-->
+									<!--<a href=""></a>-->
+									<!--<p>售价￥</p>-->
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="seven">
+						<h4>
+							<span>优惠提示</span>
+						</h4>
+						<span class="freeMail">免邮</span>
+						<a href="">全场购物满199元免运费</a> 
+					</li>
+				</ul>
+			</div>
+			<div id="allPhoto">
+				<p class="Dp">详情图片：</p>
+				<span class="zhu">注：</span>
+				<span class="commodity">商品实际颜色以静物图为准</span>
+				<div class="pictures">
+					<img src="../images/xqy16.jpg" alt="" />
+					<img src="../images/xqy17.jpg" alt="" />
+					<img src="../images/xqy18.jpg" alt="" />
+					<img src="../images/xqy19.jpg" alt="" />
+					<img src="../images/xqy20.jpg" alt="" />
+					<img src="../images/xqy21.jpg" alt="" />
+					<img src="../images/xqy22.jpg" alt="" />
+					<img src="../images/xqy23.jpg" alt="" />
+					<img src="../images/xqy24.jpg" alt="" />
+					<img src="../images/xqy25.jpg" alt="" />
+					<img src="../images/xqy26.jpg" alt="" />
+					<img src="../images/xqy27.jpg" alt="" />
+					<img src="../images/xqy28.jpg" alt="" />
+					<img src="../images/xqy29.jpg" alt="" />
+					<img src="../images/xqy30.jpg" alt="" />
+					<img src="../images/xqy31.jpg" alt="" />
+					<img src="../images/xqy32.jpg" alt="" />
+					<img src="../images/xqy33.jpg" alt="" />
+					<img src="../images/xqy34.jpg" alt="" />
+					<img src="../images/xqy35.jpg" alt="" />
+				</div>
+				<div class="Customer">
+					<ul>
+						<li>
+							<a href="">
+								<p class="tou"><img src="../images/xqy36.png" alt="" /></p>
+								<p class="hour"> 7X9小时在线客服</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p class="seven"><img src="../images/xqy37.png" alt="" /></p>
+								<p> 7天内退换货</p>
+								<p> 购物满199元免运费</p>
+							</a>
+						</li>
+						<li class="last">
+							<p><img src="../images/xqy38.jpg" alt="" /></p>
+							<p>扫描下载<em>凡客</em>客户端</p>
+						</li>
+					</ul>
+					<ul class="nav">
+						<li>
+							<a href="">关于凡客</a>
+						</li>
+						<li>
+							<a href="">新手指南</a>
+						</li>
+						<li>
+							<a href="">配送范围及时间</a>
+						</li>
+						<li>
+							<a href="">支付方式</a>
+						</li>
+						<li>
+							<a href="">售后服务</a>
+						</li>
+						<li class="help">
+							<a href="">帮助中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="foot">
+				<p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+				<p> 凡客诚品（北京）科技有限公司</p>
+			</div>
+			<div class="last">
+				<a href="" class="first"></a>
+				<span class="second"></span>
+				<a href="" class="third"></a>
+				<a href="" class="Fourth"></a>
+				<a href="" class="fifth"></a>
+				<a href="" class="sixth">
+					<img src="../images/xqy40.png" alt="" />
+				</a>
+			</div>
+		</div>
+	<script>
+//		var div = document.querySelector(".bigPicture");
+//		console.log(div);
+//		var li = document.querySelector()
+	</script>
+	</body>
+</html>

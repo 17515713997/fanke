@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/orderform.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/getXMLHTTP.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<script src="../js/getNav.js"></script>
+		<script src="../js/gettwo.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<script>
+				$("header").load("header.html", function() {
+					getNav();
+					gettwo();
+				})
+			</script>
+		</header>
+		<div id="order">
+			<div class="top">
+				<div class="top1">
+					<div class="top2">
+						<div class="tion">
+							订单已提交成功，您还需支付
+							<span id="price"></span>
+							  请您尽快完成付款！                
+						</div>
+						<div class="ti">
+							  订单号
+							  <a href="" id="ord">??????</a>
+							  ,
+							  <a href="">下载客户端</a>
+							  ,随时查看订单状态.
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<img src="../images/img.png" alt="" />
+			</div>
+		</div>
+		<div id="option">
+			<div class="xian">
+				<ul>
+					<li class="li1">全部支付方式</li>
+					<li class="li1">常用支付方式</li>
+					<li class="li1" style="display:none;">找人代付</li>
+				</ul>
+				<div class="Tip">
+					<em></em>
+					<span>
+						请在
+						<b id="b">3小时</b>
+						内完成付款，否则订单将会被自动取消
+					</span>
+				</div>
+			</div>
+			<div id="List">
+				<div id="form">
+					<div id="one1" style="display: none;">
+						<ul id="ul2">
+							<li>
+								<input type="checkbox" name="name"/>
+								<img src="../images/weixinshaomiao.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name"/>
+								<img src="../images/zf.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name"/>
+								<img src="../images/gs.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name"/>
+								<img src="../images/js.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name"/>
+								<img src="../images/zs.png" alt="" />
+							</li>
+							<a href="javascript:;" class="fr" style="clear: both;float: left;" id="im"> 
+								<img src="../images/payBtn.jpg" alt="" />
+							</a>
+						</ul>
+					</div>
+					<div id="one2" >
+						<span>银行或支付机构：</span>
+						<ul id="ul1">
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/gs.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/zs.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/zg.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/js.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yz1.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yz2.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yz3.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yz4.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/bj1.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/bj2.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/bj3.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/bj4.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh1.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh2.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh3.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh4.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh5.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/yh6.png" alt="" />
+							</li>
+							<li></li>
+							<li></li>
+						</ul>
+						<span class="fl">支付平台</span>
+						<ul class="fl" style="clear: both;" id="ul3">
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/weixinshaomiao.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/z.png" alt="" />
+							</li>
+							<li>
+								<input type="checkbox" name="name" />
+								<img src="../images/zf.png" alt="" />
+							</li>
+						</ul>
+						<a href="javascript:;" class="im fl" id="im">
+							<img src="../images/payBtn.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="buy">
+			<p class="you fr">
+				<a href="">修改订单</a>
+				<a href="">查看订单</a>
+				<a href="../html/sy.html">继续购物</a>
+			</p>
+			<p class="zuo fl">购买以上商品的顾客还购买过:</p>
+		</div>
+		<div id="the">
+			<ul></ul>
+		</div>
+		<div id="Foot">
+			<div class="fo1">
+				<ul>
+					<li>
+						<a href="">
+							<p class="g"><img src="../images/rg.png" alt="" /></p>
+							<p class="g1">7X9小时在线客服</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p class="qi"><img src="../images/qi.png" alt="" /></p>
+							<p class="qi">7天内退货</p>
+							<p class="qi">购物满199元免运费</p>
+						</a>
+					</li>
+					<li class="erweima">
+						<p class="ma1">
+							<img src="../images/ma.jpg" alt="" />
+						</p>
+						<p class="ma2">扫描下载<em>凡客</em>客户端</p>
+					</li>
+				</ul>
+			</div>
+			<div class="fo2">
+				<ul>
+					<li><a href="">关于凡客</a></li>
+					<li><a href="">新手指南</a></li>
+					<li><a href="">配送范围及时间</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">售后服务</a></li>
+					<li style="border-right:none;"><a href="">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bottom">
+			<div class="tom">
+				<div class="foo">
+					<p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+					<p>凡客诚品（北京）科技有限公司</p>
+				</div>
+			</div>
+			<div class="ter">
+				<a href="" class="tu1"></a>
+				<a href="" class="tu2"></a>
+				<a href="" class="tu3"></a>
+				<a href="" class="tu4"></a>
+				<a href="" class="tu5"></a>
+				<a href="" class="tu6">
+					<img src="../images/tu6.png" alt="" />
+				</a>
+			</div>
+		</div>
+		<script>
+			function address() {
+				var fankeuser = window.localStorage.getItem("fankeuser");
+				console.log(fankeuser);
+				if(fankeuser) {
+					var obj = JSON.parse(fankeuser);
+					console.log(obj);
+					$.ajax({
+						type: "post",
+						async: true,
+						data: "user=" + obj.user,
+						url: "../php/getfankeuser.php",
+						success: function(data) {
+							console.log(data);
+							var arr = JSON.parse(data);
+							console.log(arr);
+							console.log(window.localStorage.getItem("Money"));
+							$("#price").html("￥"+window.localStorage.getItem("Money"));
+						}
+					})
+				}
+			}
+			address();
+			
+			
+			function randomNum(minNum,maxNum){ 
+				var today = new Date();    
+				var day   = today.getDate(); //获取当前日(1-31)      
+				var month = today.getMonth() + 1; //显示月份比实际月份小1,所以要加1  
+				var year  = today.getYear();  //获取完整的年份(4位,1970-????)  getFullYear()
+				var years=today.getFullYear();
+				years= years<99?"20"+years:years;
+				month    = month<10?"0"+month:month;  //数字<10，实际显示为，如5，要改成05  
+				day   = day<10?"0"+day:day;  
+				var hh=today.getHours();
+				hh   = hh<10?"0"+hh:hh;  
+				var ii=today.getMinutes();
+				ii   = ii<10?"0"+ii:ii;  
+				var ss= today.getSeconds();
+				ss   = ss<10?"0"+ss:ss;  
+				var dada = years+month+day+hh+ii+ss;//时间不能直接相加，要这样相加！！！14位
+				 	switch(arguments.length){ 
+				        case 1: 
+				            return dada+parseInt(Math.random()*minNum+1,10); 
+				        break; 
+				        case 2: 
+				            return dada+parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+				        break; 
+				            default: 
+				                return 0; 
+				            break; 
+				    } 
+				} 
+				var aa = randomNum(1000,9);
+				$("#ord").html(aa);
+			</script>
+		<script>
+				$(document).ready(function(){
+		  			 $("input[type='checkbox']").click(function(){        
+		    			 $("input[type='checkbox']").not(this).attr("disabled",$(this).is(':checked'))
+		    			 if($(this).prop("checked")){
+		    			 	$(".im").click().attr("href", "cg.html");
+		    			 }else{
+		    			 	$(".im").click().attr("href", "javascript:;");
+		    			 }
+					});
+				});
+			</script>
+		<script src="../js/orderform.js"></script>
+		<script src="../js/cal.js"></script>
+	</body>	
+</html>

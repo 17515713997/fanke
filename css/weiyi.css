@@ -1,0 +1,258 @@
+#top{
+	width:1200px;
+	height:30px;
+	margin:0 auto;
+}
+#top span{
+	line-height:30px;
+	margin-left:5px;
+	color: #b4b4b4;
+	float:left;
+}
+#top a{
+	line-height:30px;
+	margin-left:5px;
+	color: #333;
+	float:left;
+}
+#top em{
+	line-height:30px;
+}
+#center{
+	width:1198px;
+	height:38px;
+	border:1px solid #ccc;
+	margin:0 auto;
+	margin-top:10px;
+}
+#center .fu{
+	width:66px;
+	text-align:center;
+	height: 40px;
+    line-height: 40px;
+    display: block;
+    float:left;
+    border-right:1px solid #ccc;
+}
+#center  ul li{
+	width:66px;
+	height:40px;
+	float:left;
+	text-align:center;
+	line-height:40px;
+}
+#shop{
+	width:1200px;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	border-bottom: 1px solid #a10000;;
+}
+#shop a{
+	display: block;
+	width:88px;
+	text-align:center;
+	color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    background: #b81c22;
+    border: none;
+}
+#ren{
+	width:1200px;
+	height:34px;
+	line-height:34px;
+	margin:0 auto;
+}
+#ren ul li{
+	float: left;
+    height: 34px;
+    line-height:34px;
+    border: 1px solid #f5f5f5;
+    border-left-color: #ddd;
+    border-bottom: none;
+    border-top: none;
+    line-height: 34px;
+    padding: 0px 12px 0px 20px;
+}
+#ren ul li a span{
+	display: inline-block;
+    height: 11px;
+    width: 11px;
+    line-height: 11px;
+    margin-left: 0px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background: url(../images/sprites_20130606.png) no-repeat;
+    background-position: 0px -3112px;
+}
+#img{
+	width:1200px;
+	margin:0 auto;
+}
+#img ul li {
+	float: left;
+    margin: 0px 9px 20px 0px;
+    display: inline;
+    width: 231px
+}
+#img ul li a img{
+	border: 1px solid #dbd7d6;
+    width: 228px;
+    height: 228px;
+}
+#img ul li p{
+	width:231px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+}
+#img ul li em{
+	width:231px;
+	text-align:center;
+	display: block;
+	color:#a10000;
+}
+#Foot{
+	overflow: hidden;
+    width: 1118px;
+    height: 282px;
+    margin: 0px auto;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 25px;
+}
+#Foot .fo1{
+	margin: 33px 0px 23px;
+    overflow: hidden;
+}
+#Foot .fo1 ul li{
+	width: 370px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+    margin-right: 0px;
+    float:left;
+}
+#Foot .fo1 ul li a p.g{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li a p.g1{
+	margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+#Foot .fo1 ul li a p.qi{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima{
+	border-right:none;
+}
+#Foot .fo1 ul li.erweima p.ma1{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima p.ma1 img{
+	height:104px;
+	width:104px;
+}
+#Foot .fo1 ul li.erweima p.ma2{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima p.ma2 em{
+	color: #a10000;
+}
+#Foot .fo2{
+	height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+}
+#Foot .fo2 ul li{
+	padding: 0px 65px;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    width: auto;
+    text-align: center;
+    margin-right: 0px;
+    float:left;
+}
+#Foot .fo2 ul li a{
+	color: #323232;
+}
+#bottom .tom{
+	width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border-top: 1px solid #3e3a39;
+}
+#bottom .tom .foo{
+	width: 1200px;
+    height: auto;
+    margin: 10px auto;
+}
+#bottom .tom .foo p{
+	text-align: center;
+    line-height: 25px;
+    color: #3e3a39;
+}
+#bottom .ter{
+	width:980px;
+	margin:0 auto 25px;
+	text-align:center;
+}
+#bottom .ter .tu1{
+	background: url(../images/spritesbgtop.png) no-repeat scroll 0 -581px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 113px;
+}
+#bottom .ter .tu2{
+	background:url(../images/spritesbgtop.png) no-repeat scroll 0 -629px transparent;
+    display: inline-block;
+    height: 45px;
+    width: 156px;
+}
+#bottom .ter .tu3{
+	background:url(../images/spritesbgtop.png) no-repeat scroll 0 -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 96px;
+}
+#bottom .ter .tu4{
+	background:url(../images/spritesbgtop.png) no-repeat scroll -97px -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 101px;
+}
+#bottom .ter .tu5{
+	background:url(../images/spritesbgtop.png) no-repeat scroll -202px -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+}
+#bottom .ter .tu6{
+	margin: 0 10px;
+}
+#bottom .ter .tu6 img{
+	width: 120px;
+    height: 42px;
+}

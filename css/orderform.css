@@ -1,0 +1,345 @@
+body{
+	height:1500px;
+}
+#aaa{
+	width:1263px;
+	height:197px;
+	background:red;	
+}
+#order{
+	width:980px;
+	height:170px;
+	padding:10px;
+	border:1px solid #DCDFE5;
+	margin:0 auto;
+	margin-top: 100px;
+	border-bottom: none;
+}
+#order .top .top1{
+	display: inline;
+    float: left;
+    width: 84%;
+}
+#order .top .top1 .top2{
+	padding:20px 0 30px;
+	height:10px;
+}
+#order .top .top1 .top2 .tion{
+	font-size:18px;
+	color:#000;
+}
+#order .top .top1 .top2 .ti{
+	margin-top:20px;
+	font-size:12px;
+}
+#order .top .top1 .top2 .ti a{
+	color:#a10000;
+}
+#price{
+	color: #a10000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: inline;
+    margin: 8px;
+}
+#order .right{
+	display: inline;
+    float: right;
+    padding-left: 5px;
+}
+#option{
+	width:980px;
+	border:1px solid #DCDFE5;
+	/*margin-left:131px;*/
+	padding: 10px;
+	border-top: none;
+	overflow: hidden;
+	/*float:left;*/
+	margin:0 auto;
+}
+#option .xian{
+	width: 948px;
+    background: url(../images/zhifu.png) repeat-x 0px -79px;
+    height: 31px;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+#option .xian ul{
+	margin-left:45px;
+}
+#option .xian ul li{
+	float:left;
+}
+#option .xian ul li.li1{
+	float: left;
+    width: 110px;
+    height: 30px;
+    background: url(../images/zhifu.png) no-repeat 0px -13px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 31px;
+    color: #333;
+    margin: 0px 17px 0px 0px;
+    display: inline;
+    /*background: transparent;*/
+}
+#option .xian .Tip{
+	float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 4px;
+    display: inline;
+}
+#option .xian .Tip em{
+	background: url(../images/zhifu.png) no-repeat left top;
+    display: block;
+    width: 6px;
+    height: 9px;
+    float: left;
+    overflow: hidden;
+    margin: 6px -1px 0px 0px;
+    position: relative;
+}
+#option .xian .Tip span{
+	display: block;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #cc9998;
+    background: #fff6f7;
+    padding: 0px 9px;
+    color: #333;
+    float: left;
+    font-weight: normal;
+}
+#List{
+	width:910px;
+	background: #fafafa;
+    padding: 15px 0 15px 38px;
+    margin: 0 auto;
+    float:left;
+    margin-left:15px;
+}
+#one1 ul li{
+	width:200px;
+	margin-right:25px;
+	float:left;
+	height:75px;
+	display:inherit;
+	margin-top:15px;
+}
+#one1 ul li input{
+	width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    line-height: 14px;
+    float: left;
+    margin-top: 15px;
+}
+#one2 ul li{
+	width:200px;
+	margin-right:25px;
+	float:left;
+	height:75px;
+	display:inherit;
+	margin-top:15px;
+}
+#one2 ul li input{
+	width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    line-height: 14px;
+    float: left;
+    margin-top: 15px;
+}
+#one2  .im{
+	clear:both;
+}
+#buy{
+	width:980px;
+	margin:0 auto;
+	height:62px;
+}
+#buy .you{
+    margin-top:10px;	
+}
+#buy .you a{
+	font-size: 14px;
+    padding-right: 27px;
+    color: #a10000;
+    font-weight: bold;
+}
+#buy .zuo{
+	font-weight: bold;
+    color: #333333;
+    margin-top:30px;
+}
+#the{
+	width: 980px;
+    height: 240px;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    /* padding-top: 15px; */
+    /* margin-left: 130px; */
+    /* float: left; */
+    margin-bottom: 30px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+}
+#the ul li{
+	width: 150px;
+    float: left;
+    margin-left: 38px;
+    line-height: 18px;
+    font-size: 12px;
+    display: inline;
+}
+#the ul li p{
+	color: #a10000;
+}
+#the ul li p span{
+	color: #a10000;
+}
+#Foot{
+	overflow: hidden;
+    width: 980px;
+    height: 282px;
+    margin: 0px auto;
+    padding: 0px 10px 0px;
+    border: 1px solid #e0e0e1;
+    margin-bottom: 25px;
+    margin-top:20px;
+}
+#Foot .fo1{
+	margin: 33px 0px 23px;
+    overflow: hidden;
+}
+#Foot .fo1 ul li{
+	width: 320px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+    margin-right: 0px;
+    float:left;
+}
+#Foot .fo1 ul li a p.g{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li a p.g1{
+	margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+#Foot .fo1 ul li a p.qi{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima{
+	border-right:none;
+}
+#Foot .fo1 ul li.erweima p.ma1{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima p.ma1 img{
+	height:104px;
+	width:104px;
+}
+#Foot .fo1 ul li.erweima p.ma2{
+	text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+#Foot .fo1 ul li.erweima p.ma2 em{
+	color: #a10000;
+}
+#Foot .fo2{
+	height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+}
+#Foot .fo2 ul li{
+	width: 160px;
+    text-align: center;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    margin-right: 0px;
+    float:left;
+}
+#Foot .fo2 ul li a{
+	color: #323232;
+}
+#bottom .tom{
+	width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border-top: 1px solid #3e3a39;
+}
+#bottom .tom .foo{
+	width: 1200px;
+    height: auto;
+    margin: 10px auto;
+}
+#bottom .tom .foo p{
+	text-align: center;
+    line-height: 25px;
+    color: #3e3a39;
+}
+#bottom .ter{
+	width:980px;
+	margin:0 auto 25px;
+	text-align:center;
+}
+#bottom .ter .tu1{
+	background: url(../images/spritesbgtop.png) no-repeat scroll 0 -581px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 113px;
+}
+#bottom .ter .tu2{
+	background:url(../images/spritesbgtop.png) no-repeat scroll 0 -629px transparent;
+    display: inline-block;
+    height: 45px;
+    width: 156px;
+}
+#bottom .ter .tu3{
+	background:url(../images/spritesbgtop.png) no-repeat scroll 0 -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 96px;
+}
+#bottom .ter .tu4{
+	background:url(../images/spritesbgtop.png) no-repeat scroll -97px -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 101px;
+}
+#bottom .ter .tu5{
+	background:url(../images/spritesbgtop.png) no-repeat scroll -202px -675px transparent;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+}
+#bottom .ter .tu6{
+	margin: 0 10px;
+}
+#bottom .ter .tu6 img{
+	width: 120px;
+    height: 42px;
+}

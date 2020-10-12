@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/indent.css" />
+		<script src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/reset.css" />
+	</head>
+
+	<body>
+		<div id="balance">
+			<div id="header_box">
+				<a href="#"><img src="../images/vancl-logo.png" /></a>
+				<ul>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+			<div id="cont">
+				<span>
+					<a href="javaScript:void(0);">1.我的购物车</a>
+				</span>
+				<span>2.填写核对信息单</span>
+				<span>3.成功提交订单</span>
+			</div>
+			<div id="content">
+				<div id="receiving">
+					<div id="address">
+						<span class="a">
+							收获地址：
+						</span>
+						<div class="ue">
+							<ul>
+								<li>
+									<span>
+										收货人姓名:<em id="user"></em>
+									</span>
+									<span>手机号:<em id="sj"></em></span>
+									<span>地址:<em id="dz"></em></span>
+									<span>详细地址(邮政编号):<em id="bh"></em></span>
+									<input type="button" value="编辑" id="ji" />
+								</li>
+								<div id="fff">
+									<em id="em">x</em>
+									<div class="d">
+										<span>*&nbsp;&nbsp;收&nbsp;&nbsp;货&nbsp;&nbsp;人&nbsp;:</span>
+										<input type="text" placeholder="请准确填写真实姓名" name="user" />
+									</div>
+									<div class="i">
+										<span>*&nbsp;&nbsp;地&nbsp;&nbsp;区&nbsp;&nbsp;:</span>
+										<select name="city">
+											<option value="">--省份/直辖市--</option>
+											<option value="">北京</option>
+											<option value="">天津</option>
+											<option value="">河北</option>
+											<option value="">山西</option>
+											<option value="">内蒙古</option>
+											<option value="">辽宁</option>
+											<option value="">吉林</option>
+											<option value="">黑龙江</option>
+											<option value="">上海</option>
+											<option value="">江苏</option>
+											<option value="">浙江</option>
+											<option value="">安徽</option>
+											<option value="">福建</option>
+											<option value="">江西</option>
+											<option value="">山东</option>
+											<option value="">河南</option>
+											<option value="">湖北</option>
+											<option value="">湖南</option>
+											<option value="">广东</option>
+											<option value="">广西</option>
+											<option value="">海南</option>
+											<option value="">重庆</option>
+											<option value="">四川</option>
+											<option value="">贵州</option>
+											<option value="">云南</option>
+											<option value="">西藏</option>
+											<option value="">陕西</option>
+											<option value="">甘肃</option>
+											<option value="">青海</option>
+											<option value="">宁夏</option>
+											<option value="">新疆</option>
+										</select>
+										<select name="dir">
+											<option value="">--市--</option>
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+										</select>
+										<select name="dir">
+											<option value="">--县/区--</option>
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+										</select>
+									</div>
+									<div class="i">
+										<span>*&nbsp;详&nbsp;细&nbsp;地&nbsp;址&nbsp;:</span>
+										<input type="text" placeholder="请填写详细路名及门牌号" name="xx" />
+										<a href="" class="jian">配送范围与配送时间</a>
+									</div>
+									<div class="i">
+										<span>*&nbsp;邮&nbsp;政&nbsp;编&nbsp;码&nbsp;:</span>
+										<input type="text" placeholder="请填写详细路名及门牌号" name="m" />
+									</div>
+									<div class="i">
+										<span>手机:</span>
+										<input type="text" placeholder="手机和座机至少填写一个" name="sj" />
+										<span>座机:</span>
+										<input type="text" placeholder="手机和座机至少填写一个" name="sj" />
+									</div>
+									<div class="i">
+										<a href="javascript:;" class="bao">保存并配送到这个地址</a>
+									</div>
+								</div>
+							</ul>
+							<ul>
+								<a href="">+</a>
+								<a href="#">添加新地址</a>
+							</ul>
+						</div>
+					</div>
+					<div id="delivery">
+						<h3>配送方式：</h3>
+						<ol>
+							<li class="kd">
+								<input type="radio" />
+								<label>快递</label>
+							</li>
+							<ul>
+								<li>
+									<a href="#">周一至周五、工作日送货</a>
+								</li>
+								<li>
+									<a href="#">周六、周日、假日送货</a>
+								</li>
+								<li>
+									<a href="#">周一至周日、假日均可送货</a>
+								</li>
+							</ul>
+							<li class="sm">
+								<span>声明：</span>
+								<span>1. 送货时间：早 8:30至 晚7:30</span>
+								<span>2. 我们会努力按照您选择的时间进行配送，但因天气、交通等因素影响，您的订单有可能会有延误现象，请您谅解！</span>
+							</li>
+						</ol>
+
+					</div>
+					<div id="payment">
+						<h3 class="zf">支付方式：</h3>
+						<ol>
+							<ul class="ly">
+								<li class="lll">
+									<a href="#">
+										在线支付
+									</a>
+									<a href="#" class="ooo">
+										查看银行列表
+									</a>
+								</li>
+								<div id="yiru">
+									<h5>银行或机构支付：</h5>
+									<ul>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+									</ul>
+									<h5>支付平台:</h5>
+									<ul>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+										<li><img src="../images/zs.png" alt="" /></li>
+									</ul>
+									<span></span>
+								</div>
+							</ul>
+							<script>
+								var ooo = document.querySelector(".ooo");
+								console.log(ooo);
+								var div = document.querySelector("#yiru");
+								console.log(div);
+								ooo.onmousemove = function(){
+									div.style.display = "block";
+								}
+								ooo.onmouseout = function(){
+									div.style.display = "none";
+								}
+								div.onmousemove = function(){
+									div.style.display = "block";
+								}
+								div.onmouseout = function(){
+									div.style.display = "none";
+								}
+							</script>
+							<ul class="je">
+								<li>
+									<input type="checkbox" />
+									<h3>使用账户余额</h3>
+									<span>
+										账户余额:<em>￥0.00</em>
+									</span>
+									<a href="#">
+										充100返100，点击充值
+									</a>
+								</li>
+								<li>
+									<input type="checkbox" />
+									<h3>使用积分：</h3>
+									<span>
+										使用0积分，抵现<em style="color:#b71c21;">0元</em>。
+									</span>
+								</li>
+								<li>
+									<input type="checkbox" />
+									<h3>使用礼品卡/优惠劵：</h3>
+									<span>
+									<input type="radio" />
+									礼品卡
+								</span>
+									<span>
+									<input type="radio" />
+									优惠劵
+								</span>
+								</li>
+							</ul>
+							<ul class="kh">
+								<li>
+									<label>卡号：</label>
+									<input type="text" />
+									<label>密码：</label>
+									<input type="password" />
+									<input type="button" value="增加优惠劵" />
+								</li>
+							</ul>
+						</ol>
+					</div>
+				</div>
+				<div id="invoice">
+					<h4>订单备注</h4>
+					<h4>开发票</h4>
+				</div>
+				<div id="inventory">
+					<span>商品清单</span>
+					<a href="#">回到购物车，修改产品>></a>
+				</div>
+				<h5 id="sipping">
+					<span>订单1</span>
+					<span>
+						将从
+						<em>嘉兴仓库</em>
+						发出，预计发货后
+						<em>4天</em>
+						内送达
+					</span>
+				</h5>
+				<div id="caption">
+					<div class="v">
+						<li>商品名称</li>
+						<li>尺码</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+					</div>
+					<div class="vv"></div>
+					<div class="vvv">
+						商品金额小计:
+						<span id="price1">111</span> &nbsp;&nbsp;+&nbsp;&nbsp;运费:
+						<span id="mo">￥0</span> &nbsp;&nbsp;=&nbsp;&nbsp;应付:
+						<em id="price2">111</em>
+					</div>
+				</div>
+				<li id="pay">
+					<em>
+						已支付：
+						<label >￥0.00</label>
+						，您还需支付：
+						<label id="money"></label>
+					</em>
+				</li>
+				<div id="present">
+					<div class="returns">
+						祝您下单愉快，普通商品签收之日起7天内，可享受7天无理由退货
+					</div>
+					<a id="obt" href="orderform.html"><input type="button" value="提交订单" /></a>
+
+				</div>
+				<div id="base">
+					<span>
+					Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号
+				</span>
+					<p>
+						<img src="../images/cert-redlogo.gif" />
+						<img src="../images/cert-costumeorg.gif" />
+						<img src="../images/cert-wsjybzzx.gif" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			//		var oA=document.querySelector("#obt");
+			//		oA.onclick=function(){
+			//			alert("a");
+
+			function address() {
+				var fankeuser = window.localStorage.getItem("fankeuser");
+				console.log(fankeuser);
+				if(fankeuser) {
+					var obj = JSON.parse(fankeuser);
+					//console.log(obj);
+					$.ajax({
+						type: "post",
+						async: true,
+						data: "user=" + obj.user,
+						url: "../php/getfankeuser.php",
+						success: function(data) {
+							//console.log(data);
+							var arr = JSON.parse(data);
+							//console.log(arr);
+							shopcarHTML(arr);
+
+						}
+					})
+				}
+			}
+			address();
+
+			function shopcarHTML(arr) {
+				//console.log(arr);
+				for(var j = 0; j < arr.length; j++) {
+					var oDl = document.createElement("dl");
+					var add = document.createElement("dd");
+					oDl.className = "xq";
+
+					var add = document.createElement("dd");
+					$(add).append(arr[j].shopTitle);
+					$(oDl).append(add);
+					add.className = "dd1";
+
+					var add = document.createElement("dd");
+					$(add).append(arr[j].size);
+					$(oDl).append(add);
+					add.className = "dd2";
+
+					var add = document.createElement("dd");
+					$(add).append(arr[j].sPrice);
+					$(oDl).append(add);
+					add.className = "dd3";
+					add.innerHTML = "￥"+add.innerHTML;
+
+
+
+					var add = document.createElement("dd");
+					$(add).append(arr[j].shopNum);
+					$(oDl).append(add);
+					add.className = "dd4";
+
+					var add = document.createElement("dd");
+					$(add).append((arr[j].sPrice) * (arr[j].shopNum));
+					$(oDl).append(add);
+					add.className = "dd5";
+					add.innerHTML = "￥"+add.innerHTML;
+
+
+				
+					$("div.vv").append(oDl);
+					//$("div.vvv span.xiaoji").html(((arr[j].sPrice) * (arr[j].shopNum)).toFixed(2));
+					//$("div.vvv span.yunfei").html(10.00);
+					//$("div.vvv em.yingfu").html(parseInt((arr[j].sPrice) * (arr[j].shopNum) + 10.00));
+
+					//$("li#pay label.zhifu").html(parseInt((arr[j].sPrice) * (arr[j].shopNum) + 10.00).toFixed(2));
+
+				}
+
+				//console.log($("#caption dl.xq dd.dd5"));
+				var temp = 0;
+				var tttt = 0;
+				var rrrr = 0;
+				$("#caption dl.xq").each(function(b, obj) {
+					temp += $(obj).find("dd.dd5").html().split("￥")[1] * 1;
+					tttt += $(obj).find("dd.dd5").html().split("￥")[1] * 1;
+					rrrr += $(obj).find("dd.dd5").html().split("￥")[1] * 1;
+				})
+				$("label#money").html("￥" + temp);
+				$("#price1").html("￥" + tttt);
+				$("#price2").html("￥" + rrrr);
+
+				window.open("orderform.html?msg=" + temp);
+
+				window.localStorage.setItem("Money", temp);
+				//console.log(window.localStorage.getItem("Money"));
+
+			}
+		</script>
+		<script>
+			var ji = document.querySelector("#ji");
+			var em = document.querySelector("#em");
+			var ff = document.querySelector("#fff");
+			ji.onclick = function() {
+				ff.style.display = "block";
+			}
+			em.onclick = function() {
+				ff.style.display = "none";
+			}
+		</script>
+		<script>
+			var user = document.querySelector("#user");
+			var sj = document.querySelector("#sj");
+			var dz = document.querySelector("#dz");
+			var bh = document.querySelector("#bh");
+			var sz = document.querySelectorAll("input[name=sj]");
+			var xx = document.querySelector("input[name=xx]");
+			var m = document.querySelector("input[name=m]");
+			var Ouser = document.querySelector("input[name=user]");
+			var a = document.querySelector("a.bao");
+			a.onclick = function() {
+				ff.style.display = "none";
+				for(var i = 0; i < sz.length; i++) {
+					sj.innerHTML = sj.innerHTML + sz[i].value;
+				}
+				dz.innerHTML = xx.value + dz.innerHTML;
+				bh.innerHTML = m.value + bh.innerHTML;
+				user.innerHTML = Ouser.value + user.innerHTML;
+			}
+		</script>
+	</body>
+
+</html>

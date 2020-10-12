@@ -1,0 +1,481 @@
+#title{
+	border-bottom:1px solid #7a7f89;
+	height:40px !important;
+	margin-top:15px;
+	padding:0 0 15px 0;
+	width:1200px;
+	font-size:12px;
+	color:#323232;
+	margin:20px auto;
+}
+#title .logo{
+    background: url("../images/logo_new.jpg") no-repeat left top;
+    display: inline-block;
+    height: 50px;
+    width: 187px;
+}
+#title p{
+	float: right;
+	margin-top:20px;
+	
+}
+#title p a{
+	text-decoration: none;
+	color:#000;
+}
+
+.center{
+	width: 1200px;
+    border-bottom: 1px solid #999;
+    margin: 50px auto 10px;
+    height:523px;
+}
+.center .top{
+	width:1200px;
+	height:25px;
+	position: relative;
+	/*display: none;*/
+}
+.center .top dl.tt dd.denglu{
+	/*display: none;*/
+	width:402px;
+	height:405px;
+	float: right;
+}
+.center .top dl.tt dd.denglu h3.dd{
+	font-size: 22px;
+    color: #979797;
+    font-weight: bolder;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    float: right;
+    margin: 0 100px 0 0;
+    width: 400px;
+    position: relative;
+}
+.center .top dl.tt dd.denglu h3 span{
+	font-size: 12px;
+	color:#CCCCCC;
+	font-weight:normal;
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+.center .top dl.tt dd.denglu h3 span a{
+	color:red;
+}
+.center .left{
+	float: left;
+	margin:15px 0 0 150px;
+}
+
+.center dl.tt dd.denglu .right{
+	width:400px;
+	border:1px solid #d1d1d1;
+	background:#fff;
+	float: right;
+	margin-top:20px;
+	margin-bottom: 20px;
+	margin-right:100px;
+}
+.center dl.tt dd.denglu .right div.head_sign{
+	width:400px;
+	height:35px;
+	line-height: 35px;
+	border-bottom: 1px solid #cbcbcb;
+}
+.center dl.tt dd.denglu .right div.head_sign li{
+	width:200px;
+	background:#f5f5f5;
+	float: left;
+	color:#000;
+	text-align: center;
+	
+}
+.center dl.tt dd.denglu .right div.head_sign li.active{
+	background:#b42025;
+	font-weight:bold;
+	color:#fff;
+}
+
+#sign_show{
+	width:400px;
+	height:371px;
+}
+
+#sign_show .show{
+	padding:10px 20px 10px;
+}
+#sign_show .two{
+	display: none;
+}
+#sign_show .two ol li{
+	margin-bottom: 18px;
+}
+#sign_show .two li.one{
+	line-height: 48px;
+	float: left;
+}
+#sign_show .two li.one input[type=text]{
+	width:249px;
+	height:45px;
+	float: left;
+	border:1px solid gray;
+	margin-right:10px;
+}
+#sign_show .two li.one input[type=button]{
+	width:96px;
+	height:45px;
+	float: left;
+	border:1px solid gray;
+}
+#yz{
+	width:333px;
+	height:16px;
+	float: left;
+	display: block;
+	font-size:8px;
+	line-height: 16px;
+}
+#sign_show .two li.er input.two_yy{
+	width:140px;
+	height:42px;
+	float: left;
+	border:1px solid gray;
+}
+#sign_show .two li.er label.two_tt{
+	width:132px;
+	height:42px;
+	float: left;
+	border:1px solid gray;
+	font-size:20px;
+	text-align: center;
+	line-height: 42px;
+}
+#sign_show .two li.er p{
+	float: right;
+	
+}
+#sign_show .two li.er label.two_tt span{
+	line-height: 20px;
+	height:20px;
+	display: block;
+}
+#sign_show .two li.three input[type=text]{
+	width:360px;
+	height:45px;
+	float: left;
+	border:1px solid gray;
+	margin-top:18px;
+	margin-bottom:20px;
+}
+#sign_show .two .sign_btn div.SIGN_two input[type=button]{
+	width: 360px;
+	height:45px;
+	float: left;
+	color:#fff;
+	display: block;
+	background-color: #b42025;
+	text-align: center;
+	font-size:18px; 
+	line-height: 45px;
+	outline: none;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
+#sign_show .show .user,#sign_show .show .pwd{
+	width:360px;
+	height:45px;
+	border:1px solid #cbcbcb;
+	position: relative;
+	margin-top:27px;
+}
+
+#sign_show .sign_btn .fount{
+	float: right;
+	display: block;
+	font-weight: bold;
+	color:red;
+	line-height:30px;
+	font-size:12px;
+	margin-top:25px;
+}
+#sign_show .sign_btn div.SIGN{
+	width: 360px;
+	height:45px;
+	background-color: #b42025;
+	float: left;
+	margin-left:20px;
+}
+#sign_show .show .sign_btn div.SIGN input[type=button]{
+	width: 360px;
+	height:45px;
+	float: left;
+	color:#fff;
+	display: block;
+	background-color: #b42025;
+	text-align: center;
+	font-size:18px; 
+	line-height: 45px;
+	outline: none;
+	border:none;
+}
+#sign_show .sign_btn div.SIGN input[type=button]:hover{
+	font-weight:bold;
+}
+#sign_show div.xuxian{
+	width:100%;
+	height:1px;
+	margin-top:120px;
+	border-bottom:1px dashed #CCCCCC;
+}
+#sign_show div.ruanjian{
+	width:360px;
+	height:auto;
+	margin:20px auto;
+}
+#sign_show div.ruanjian h3{
+	color:#aca4a4;
+}
+#sign_show div.ruanjian a{
+	width:33px;
+	height:33px;
+	float:left;
+	display: block;
+	margin-right:10px;
+	background:url("../images/logos.jpg")no-repeat left center;
+}
+#sign_show div.ruanjian a.xiaomi{
+	background-position:-147px 0px;
+}
+#sign_show div.ruanjian a.zhifubao{
+	background-position:-48px 0px;
+}
+#sign_show div.ruanjian a.QQ{
+	background-position:-189px 0px;
+}
+#sign_show div.ruanjian a.anquan{
+	background-position:-228px 0px;
+}
+#sign_show div.ruanjian a.weibo{
+	background-position:-95px 0px;
+}
+#sign_show div.ruanjian h3.hezuo{
+	font-size: 14px;
+	color:#000;
+}
+
+
+
+.center .top dl.tt dd.zhuce{
+	display: none;
+}
+.center .top dl.tt dd.zhuce h3.zz{
+	font-size: 22px;
+    color: #979797;
+    font-weight:normal;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    float: right;
+    margin: 0 100px 0 0;
+    width: 400px;
+    position: relative;
+}
+.center .top dl.tt dd.zhuce h3 span{
+	font-size: 12px;
+	color:#CCCCCC;
+	font-weight:normal;
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+.center .top dl.tt dd.zhuce h3 span a{
+	color:red;
+}
+.center .top dl.tt dd.zhuce div.line{
+	width:416px;
+	height:2px;
+	background: #b81e20;
+	margin-top:9px;
+}
+.center dl.tt dd.zhuce .register_box{
+	width:416px;
+	height:406px;
+	float: right;
+	margin-top:34px;
+	margin-bottom: 20px;
+	margin-right:80px;
+}
+.center dl.tt dd.zhuce .register_box ul li{
+	height:46px;
+	margin-bottom:24px;
+}
+.center dl.tt dd.zhuce .register_box input.yanzheng{
+	width:260px;
+	height:42px;
+	float:left;
+	border:1px solid gainsboro;
+}
+.center dl.tt dd.zhuce .register_box span{
+	float: left;
+	display: block;
+}
+.center dl.tt dd.zhuce .register_box span.alert{
+	width:106px;
+	height:18px;
+	float: left;
+	display: block;
+	background: #f9f9f9;
+	border:1px solid #ffd5d5;
+	margin-top:5px;
+	display: none;
+}
+.center dl.tt dd.zhuce .register_box input.yy{
+	width:138px;
+	height:42px;
+	border:1px solid gainsboro;
+	float: right;
+}
+.center dl.tt dd.zhuce .register_box li.shoujihao input[type=button]{
+	width:138px;
+	height:42px;
+	border:1px solid gainsboro;
+	float: right;
+}
+.center dl.tt dd.zhuce .register_box ul li.phone input,.center dl.tt dd.zhuce .register_box ul li.mima input,.center dl.tt dd.zhuce .register_box ul li.repeat input{
+	width:409px;
+	height:41px;
+	border:1px solid gainsboro;
+}
+
+.center dl.tt dd.zhuce .register_box ul li.dibu{
+	margin-top:15px;
+}
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box{
+	margin:10px 0 0 0 ;
+}
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box input[type=checkbox]{
+	float: left;
+}
+
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box p{
+	width:400px;
+	float: left;
+}
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box span em{
+	float: left;
+}
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box p a{
+	color:#b52024;
+	width:100%;
+}
+.center dl.tt dd.zhuce .register_box ul li.dibu div.dibu_box p a:hover{
+	text-decoration: underline;
+}
+
+#Register{
+	width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    clear: both;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top:20px;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottom{
+	width:100%;
+	height:193px;
+}
+
+#bottom .bottom_center{
+	width:980px;
+	margin:0 auto;
+	margin-top:27px;
+}
+
+#bottom .bottom_center .tubiao a{
+	float: left;
+	display: block;
+	margin-right:20px;
+	margin-top:20px;
+}
+#bottom .bottom_center .tubiao .chengxin{
+	background: url("../images/log.png") no-repeat scroll 0 -400px transparent;
+    display: block;
+    height: 42px;
+    width: 113px;
+    margin-left:142px;
+}
+#bottom .bottom_center .tubiao .fuzhuang{
+	background: url("../images/log.png") no-repeat scroll 0 -448px transparent;
+    display: block;
+    height: 45px;
+    width: 156px;
+}
+#bottom .bottom_center .tubiao .jiaoyi{
+	background: url("../images/log.png") no-repeat scroll 0 -494px transparent;
+    display: block;
+    height: 42px;
+    width: 96px;
+}
+#bottom .bottom_center .tubiao .jingying{
+	background: url("../images/log.png") no-repeat scroll -97px -494px transparent;
+    display: block;
+    height: 42px;
+    width: 101px;
+}
+
+/*#sign_show two.yanzheng{
+	width:415px;
+	height:400px;
+	border:1px solid red;
+}
+#register_box .yanzheng{
+	width: 260px;
+	height:40px;
+	border:1px solid gray;
+}*/

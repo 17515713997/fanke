@@ -1,0 +1,59 @@
+/*
+ * reset  重置
+ * 
+ * 用于html重置所有属性的页面
+ 
+*/
+ 
+
+body,h1,h2,h3,h4,h5,h6,p,div,ul,li,ol,dl,dt,dd,input,textarea,iframe,nav,header,section,aside,footer,img,table,tbody,dt,dd,dl{
+	margin:0;
+	padding:0;
+}
+ul,ol,li{
+	list-style:none;
+}
+a,ins,u{
+	text-decoration:none;
+}
+em,i{/*倾斜*/
+	font-style:normal;/*字体-样式:正常*/
+}
+input{
+	outline:none;
+}
+.fl{/*定义一个左浮动样式*/
+	float:left;
+}
+.fr{/*定义一个右浮动样式*/
+	float:right;
+}
+.clear{/*清除左右浮动造成的影响*/
+	clear:both;
+}
+html{
+	font-size:10px;
+	/* 1rem = 10px*/
+	/* 1em = 10px*/
+}
+body{
+	font-size:1.2rem;/* 1.2 X 10px */
+	color:#646464;
+	/*设置页面文字颜色为出现最多的那个颜色*/
+	font-family:"arial, helvetica, sans-serif";
+	/*font:倾斜 加粗 文字大小/行高  字体*/
+}
+a{
+	color:#808080;
+}
+
+
+
+
+
+
+
+
+
+
+

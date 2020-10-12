@@ -1,0 +1,229 @@
+#pictureBox{
+	width: 1200px;
+	height: 650px;
+	background:url(../images/xr2.jpg)no-repeat left top;
+	margin: 0 auto;
+	position: relative;
+}
+#pictureBox .new{
+	background: url(../images/xr1.png)no-repeat left 80px;
+	width: 440px;
+	height: 235px;
+	padding: 40px 0 0 0;
+	margin: 0 auto;
+}
+#pictureBox .quan{
+	width: 620px;
+	height: 225px;
+	margin: 20px auto 0 auto;
+	position: relative;
+	background: url(../images/xr3.png)no-repeat left bottom;
+}
+#pictureBox .quan span{
+	font-size: 104px;
+	margin: 0 0 0 120px;
+	font-style: italic;
+	font-family: arial;
+	color: #ffdfcc;
+	padding-left: 8px;
+}
+#pictureBox p{
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+#secNavBox{
+	width: 980px;
+	height: 44px;
+	margin: 20px auto 0;
+	text-align: center;
+}
+#secNavBox .text{
+	background: url(../images/xr4.png)no-repeat 0 -680px;
+	height: 26px;
+	width: 335px;
+	line-height: 26px;
+	padding-left: 5px;
+	float: left;
+	border: none;
+	margin-left: 286px;
+}
+#secNavBox .button{
+	background: url(../images/xr4.png)no-repeat 0 -654px;
+	width: 70px;
+	height: 26px;
+	border: none;
+	float: left;
+	cursor: pointer;
+}
+#secNavBox ul{
+	width: 395px;
+	height: 18px;
+	clear: both;
+	margin:0 auto;
+}
+#secNavBox .hot a{
+	color: #A10000;
+}
+#secNavBox ul li{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 5px;
+	text-align: center;
+}
+#secNavBox ul li a{
+	text-align: center;
+	font-size: 12px;
+	margin-right:7px;
+	color: #333;
+}
+#secNavBox ul li a:hover{
+	color: #A10000;
+}
+#Customer{
+	width: 1118px;
+	height: 282px;
+	margin: 32px auto 0;
+	border: 1px solid #e0e0e1;
+	margin-bottom: 25px;
+}
+#Customer ul{
+	height: 138px;
+	margin: 33px 0 23px;
+}
+#Customer ul li{
+	width: 370px;
+	height: 138px;
+	border-right: 1px solid #E0E0E1;
+	float: left;
+}
+#Customer ul li p.tou{
+	margin: 15px auto 30px;
+	text-align: center;
+	line-height: 26px;
+}
+#Customer ul li p.hour{
+	margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+#Customer ul li p.seven{
+	margin: 20px 0;
+	text-align: center;
+	line-height: 26px;
+}
+#Customer ul li p{
+	text-align: center;
+	font-size: 14px;
+	color: #727271;
+	line-height: 26px;
+}
+#Customer .last{
+	border-right: none;
+}
+#Customer .last img{
+	width: 104px;
+	height: 104px;
+	display: block;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+#Customer ul li em{
+	color: #A10000;
+}
+#Customer .nav{
+	width: 100%;
+	height: 26px;
+	padding: 17px 0 14px;
+	background: #f8f8f8;
+}
+#Customer .nav li{
+	float: left;
+	padding: 0px 65px;
+    line-height: 26px;
+    height: 26px;
+    border-right: 1px solid #dadadb;
+    width: auto;
+    text-align: center;
+}
+#Customer .nav li a{
+	color: #323232;
+}
+#Customer .nav .help{
+	border-right: none;
+}
+#footer{
+	width: 100%;
+	height: 138px;
+	margin: 0 auto;
+	border-top: 1px solid #3e3a39;
+}
+#footer .foot{
+	width: 1200px;
+	height: 50px;	
+	margin: 10px auto;
+}
+#footer .foot p{
+	text-align: center;
+	color: #3E3A39;
+	line-height: 25px;
+}
+#footer .last{
+	width: 980px;
+	height: 48px;
+	margin: 20px auto 25px;
+	text-align: center;
+}
+#footer .last a{
+	margin: 0 10px;
+}
+#footer .last .first{
+	background: url(../images/xqy39.png)no-repeat 0 -581px;
+	display: inline-block;
+	height: 42px;
+	width: 113px;
+	margin: 0 10px;
+}
+#footer .last .second{
+	background: url(../images/xqy39.png)no-repeat 0 -629px;
+	display: inline-block;
+    height: 45px;
+    width: 156px;	
+}
+#footer .last .third{
+	background: url(../images/xqy39.png)no-repeat 0 -675px;
+	display: inline-block;
+    height: 42px;
+    width: 96px;
+}
+#footer .last .Fourth{
+	background: url(../images/xqy39.png) no-repeat -97px -675px;
+    display: inline-block;
+    height: 42px;
+    width: 101px;
+}
+#footer .last .fifth{
+	background: url(../images/xqy39.png) no-repeat -202px -675px;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+}
+#footer .last .sixth{
+	display: inline-block;
+	width: 120px;
+	height: 39px;
+}
+#footer .last .sixth img{
+	width: 120px;
+	height: 39px;
+}

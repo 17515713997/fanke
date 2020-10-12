@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/Fourth.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+	</head>
+
+	<body>
+		<div id="fourth">
+			<h2>热门问题</h2>
+			<div class="dh">
+				<ul>
+					<li>
+						<a href="javascript:;">账户</a>
+					</li>
+					<li>
+						<a href="javascript:;">订购</a>
+					</li>
+					<li>
+						<a href="javascript:;">配送</a>
+					</li>
+					<li>
+						<a href="javascript:;">退换货</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab">
+				<ol>
+					<li><span>1</span>
+						<a href="">为什么在登录的时候总说用户名和密码错误？</a>
+					</li>
+					<li><span>2</span>
+						<a href="">如何申请虚拟账户取现？</a>
+					</li>
+					<li><span>3</span>
+						<a href="">忘记支付密码怎么办？如何修改支付密码</a>
+					</li>
+					<li><span>4</span>
+						<a href="">普通会员如何升级为VIP或者SVIP？</a>
+					</li>
+				</ol>
+				<ol style="display:none">
+					<li><span>1</span>
+						<a href="">怎样在网上办理退货？</a>
+					</li>
+					<li><span>2</span>
+						<a href="">订单状态查询</a>
+					</li>
+					<li><span>3</span>
+						<a href="">哪些城市可以货到付款？订单完成后多长时间送达？</a>
+					</li>
+					<li><span>4</span>
+						<a href="">如何办理退款？</a>
+					</li>
+				</ol>
+				<ol style="display:none">
+					<li><span>1</span>
+						<a href="">配送时间查询</a>
+					</li>
+					<li><span>2</span>
+						<a href="">商品验货与签收</a>
+					</li>
+					<li><span>3</span>
+						<a href="">可以指定送货时间吗？</a>
+					</li>
+					<li><span>4</span>
+						<a href="">订单拆单后，运费如何收取？</a>
+					</li>
+				</ol>
+				<ol style="display:none">
+					<li><span>1</span>
+						<a href="">退货产生的邮费谁出？</a>
+					</li>
+					<li><span>2</span>
+						<a href="">订单拒收后，退款什么时候返还？</a>
+					</li>
+					<li><span>3</span>
+						<a href="">申请补开发票后，多长时间能够送达？ </a>
+					</li>
+					<li><span>4</span>
+						<a href="">为什么订单没有配送过，订单状态却显示为“拒收”？</a>
+					</li>
+				</ol>
+			</div>
+			<div class="phone">
+				<p>客服热线：400-659-0066</p>
+				<p>客服邮箱：service@vancl.cn</p>
+			</div>
+			<div class="end">
+				<input type="button" value="以上信息没帮助，转在线客服"/>
+			</div>
+		</div>
+		<script>
+			var dh = document.querySelector(".dh")
+			var ul = document.querySelector("ul");
+			var ulli = document.querySelectorAll(".dh ul li");
+			console.log(ulli);
+			var a = document.querySelectorAll(".dh ul li a");
+			var tab = document.querySelector(".tab");
+			var ol = document.querySelectorAll("ol");
+			console.log(ol);
+			var olli = document.querySelectorAll("ol li");
+			console.log(olli);
+			var i = 0;
+			a[i].style.color = "#b60005";
+			for(; i < ulli.length; i++) {
+				ulli[i].index = i;
+				ulli[i].onclick = function() {
+					for(var j = 0; j < ol.length; j++) {
+						a[j].style.color = "#9d9d9d";
+						ol[j].style.display = "none";
+					}
+					a[this.index].style.color = "#b60005";;
+					ol[this.index].style.display = "block";
+				}
+			}
+		</script>
+	</body>
+
+</html>

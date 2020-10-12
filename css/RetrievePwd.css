@@ -1,0 +1,25 @@
+#title{
+	border-bottom:1px solid #7a7f89;
+	height:40px !important;
+	margin-top:15px;
+	padding:0 0 15px 0;
+	width:1200px;
+	font-size:12px;
+	color:#323232;
+	margin:20px auto;
+}
+#title a.logo{
+    background: url("../images/logo_new.jpg") no-repeat left top;
+    display: inline-block;
+    height: 50px;
+    width: 187px;
+}
+#title p{
+	float: right;
+	margin-top:20px;
+	
+}
+#title p a{
+	text-decoration: none;
+	color:#000;
+}
